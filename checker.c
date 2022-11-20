@@ -15,7 +15,7 @@ int checker(const char *format, spc struct_array[], va_list args)
 {
 	int num_of_printed_char = 0, i, j, val;
 
-	for (i = 0; *(format + i); i++)
+	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] == '%')
 		{
@@ -30,7 +30,7 @@ int checker(const char *format, spc struct_array[], va_list args)
 					break;
 				}
 			}
-			if (struct_array->c == NULL && format[i + 1] != ' ')
+			if (struct_array[j].c == NULL && format[i + 1] != ' ')
 			{
 				if (format[i + 1] == '\0')
 					return (-1);
