@@ -1,6 +1,8 @@
 #ifndef HEADER
 #define HEADER
 #include <stdarg.h>
+#include <unistd.h>
+#include <stdlib.h>
 
 /**
  * struct formatSpecifiers - holds two arguments.
@@ -17,6 +19,10 @@ typedef struct formatSpecifiers
 } spc;
 
 int _printf(const char *format, ...);
-int checker(const char *format, spc struct_array, va_list args);
+int checker(const char *format, spc struct_array[], va_list args);
+char _putchar(int c);
+int print_char(va_list args);
+int print_str(va_list args);
+int print_percentage(va_list args);
 
 #endif
