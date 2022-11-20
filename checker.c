@@ -30,7 +30,7 @@ int checker(const char *format, spc struct_array[], va_list args)
 					break;
 				}
 			}
-			if (struct_array == NULL && format[i + 1] != ' ')
+			if (struct_array.c == NULL && format[i + 1] != ' ')
 			{
 				if (format[i + 1] == '\0')
 					return (-1);
