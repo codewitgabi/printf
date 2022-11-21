@@ -8,15 +8,18 @@
 
 int print_integer(va_list args)
 {
-	int num, len = 0, n = 1;
+	int len = 0, n = 1, a;
+	unsigned int num;
 
-	num = va_arg(args, int);
+	a = va_arg(args, int);
 
-	if (num < 0)
+	if (a < 0)
 	{
-		_putchar('-');
-		num *= -1;
+		len += _putchar('-');
+		a *= -1;
 	}
+
+	num = a;
 
 	while (num / n)
 	{
