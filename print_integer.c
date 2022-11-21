@@ -12,6 +12,12 @@ int print_integer(va_list args)
 
 	num = va_arg(args, int);
 
+	if (num < 0)
+	{
+		_putchar('-');
+		num *= -1;
+	}
+
 	while (num / n)
 	{
 		n *= 10;
