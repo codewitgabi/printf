@@ -25,5 +25,10 @@ int print_char(va_list args);
 int print_str(va_list args);
 int print_percentage(va_list args);
 int print_integer(va_list args);
+int print_binary(va_list args);
+void print_base(char *str);
+char *reverse_string(char *str);
+unsigned int base_len(unsigned int, int);
+
 
 #endif
