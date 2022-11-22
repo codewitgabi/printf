@@ -2,7 +2,7 @@
 .SH NAME
 _printf - format and print data
 .SH SYNOPSIS
-#include <unistd.h> <stdarg.h> <stdlib.h> "holberton.h"
+#include <unistd.h> <stdarg.h> <stdlib.h> "main.h"
 
 int printf(const char *format, ...);
 
